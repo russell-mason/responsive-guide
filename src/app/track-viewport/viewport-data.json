@@ -1,0 +1,144 @@
+{
+    "viewports": [
+        {
+            "name": "desktop minimum",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 400,
+            "deviceHeight": 400,
+            "viewWidth": 375,
+            "viewHeight": 220,
+            "className": "viewport-desktop-minimum"
+        },
+        {
+            "name": "desktop small",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 670,
+            "deviceHeight": 640,
+            "viewWidth": 645,
+            "viewHeight": 460,
+            "className": "viewport-desktop-small"
+        },
+        {
+            "name": "desktop reduced",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 980,
+            "deviceHeight": 790,
+            "viewWidth": 955,
+            "viewHeight": 610,
+            "className": "viewport-desktop-reduced"
+        },
+        {
+            "name": "desktop",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 1380,
+            "deviceHeight": 1010,
+            "viewWidth": 1355,
+            "viewHeight": 830,
+            "className": "viewport-desktop"
+        },
+        {
+            "name": "desktop hd",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 1920,
+            "deviceHeight": 1080,
+            "viewWidth": 1895,
+            "viewHeight": 900,
+            "className": "viewport-desktop-hd"
+        },
+        {
+            "name": "desktop 4k",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 3840,
+            "deviceHeight": 2160,
+            "viewWidth": 3815,
+            "viewHeight": 1980,
+            "className": "viewport-desktop-4k"
+        },
+        {
+            "name": "tablet landscape",
+            "device": "tablet",
+            "orientation": "landscape",
+            "deviceWidth": 1000,
+            "deviceHeight": 600,
+            "viewWidth": 930,
+            "viewHeight": 530,
+            "className": "viewport-tablet-landscape"
+        },
+        {
+            "name": "tablet portrait",
+            "device": "tablet",
+            "orientation": "portrait",
+            "deviceWidth": 600,
+            "deviceHeight": 1000,
+            "viewWidth": 530,
+            "viewHeight": 930,
+            "className": "viewport-tablet-portrait"
+        },
+        {
+            "name": "tablet-plus landscape",
+            "device": "tablet",
+            "orientation": "landscape",
+            "deviceWidth": 1150,
+            "deviceHeight": 820,
+            "viewWidth": 1080,
+            "viewHeight": 750,
+            "className": "viewport-tablet-plus-landscape"
+        },
+        {
+            "name": "tablet-plus portrait",
+            "device": "tablet",
+            "orientation": "portrait",
+            "deviceWidth": 820,
+            "deviceHeight": 1150,
+            "viewWidth": 750,
+            "viewHeight": 1080,
+            "className": "viewport-tablet-plus-portrait"
+        },
+        {
+            "name": "phone landscape",
+            "device": "phone",
+            "orientation": "landscape",
+            "deviceWidth": 670,
+            "deviceHeight": 280,
+            "viewWidth": 620,
+            "viewHeight": 200,
+            "className": "viewport-phone-landscape"
+        },
+        {
+            "name": "phone portrait",
+            "device": "desktop",
+            "orientation": "portrait",
+            "deviceWidth": 360,
+            "deviceHeight": 720,
+            "viewWidth": 360,
+            "viewHeight": 540,
+            "className": "viewport-phone-portrait"
+        },
+        {
+            "name": "phone-plus landscape",
+            "device": "desktop",
+            "orientation": "landscape",
+            "deviceWidth": 840,
+            "deviceHeight": 410,
+            "viewWidth": 790,
+            "viewHeight": 330,
+            "className": "viewport-phone-plus-landscape"
+        },
+        {
+            "name": "phone-plus portrait",
+            "device": "desktop",
+            "orientation": "portrait",
+            "deviceWidth": 410,
+            "deviceHeight": 840,
+            "viewWidth": 410,
+            "viewHeight": 660,
+            "className": "viewport-phone-plus-portrait"
+        }
+    ]
+}

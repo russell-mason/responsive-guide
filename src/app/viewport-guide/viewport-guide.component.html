@@ -1,0 +1,34 @@
+<div track-viewport #viewportTracker="viewportTracker" class="viewport-guide">
+    <!-- Highlighted full area - background and labels -->
+    <div class="active-device" [ngStyle]="{ 'width.px': viewportTracker.activeViewport().deviceWidth, 'height.px': viewportTracker.activeViewport().deviceHeight }">
+        <div class="name label">{{viewportTracker.activeViewport().name}}</div>
+        <div class="size label">{{viewportTracker.activeViewport().deviceWidth}} x {{viewportTracker.activeViewport().deviceHeight}}</div> 
+    </div>
+
+    <!-- Highlighted active area - background and labels -->
+    <div class="active-viewport" [ngStyle]="{ 'width.px': viewportTracker.activeViewport().viewWidth, 'height.px': viewportTracker.activeViewport().viewHeight }">
+        <div class="name label">{{viewportTracker.activeViewport().name}}</div>
+        <div class="size label">{{viewportTracker.activeViewport().viewWidth}} x {{viewportTracker.activeViewport().viewHeight}}</div>
+    </div>
+
+    @for(viewport of viewportTracker.viewports; track viewport.className) {
+        <!-- Full area guide- background only -->
+        <div class="device-background" [ngStyle]="{ 'width.px': viewport.deviceWidth, 'height.px': viewport.deviceHeight}"></div>
+    }
+
+    @for(viewport of viewportTracker.viewports; track viewport.className) {
+        <!-- Full area guide- labels only -->
+        <div class="device-label" [ngStyle]="{ 'width.px': viewport.deviceWidth, 'height.px': viewport.deviceHeight}">
+            <div class="name label">{{viewport.name}}</div>
+            <div class="size label">{{viewport.deviceWidth}} x {{viewport.deviceHeight}}</div>
+        </div>
+    }
+
+    <!-- Screen viewport size -->
+    <div class="screen-size">{{viewportTracker.client().width}} x {{viewportTracker.client().height}}</div>
+    <div class="screen-label">view</div>
+
+    <!-- Screen browser size -->
+    <div class="browser-size">{{viewportTracker.browser().width}} x {{viewportTracker.browser().height}}</div>
+    <div class="browser-label">browser</div>
+</div>

@@ -1,0 +1,137 @@
+:host {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.viewport-guide {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.device-background,
+.device-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.device-background {
+    z-index: 1;
+    background-color: #ffff0010;
+    border: 1px solid #565656;
+}
+
+.device-label {
+    z-index: 2;;
+}
+
+.label {
+    position: absolute;
+    right: 0;
+    padding: 4px;
+    color: #444444;
+    background-color: #aaaaaa;
+}
+
+.name {
+    bottom: 0;
+}
+
+.size {
+    bottom: 1.5em;
+}
+
+.screen-size,
+.screen-label,
+.browser-size,
+.browser-label {    
+    position: fixed;
+    z-index: 4;
+    display: inline-block;
+    padding: 6px;
+    color: #ebebeb;
+    background-color: #323232;
+}
+
+.screen-label,
+.browser-label {    
+    padding: 0 6px 4px 6px;
+}
+
+.screen-label {    
+    top: 25px;
+}
+
+.browser-size {    
+    top: 50px;
+}
+
+.browser-label {    
+    top: 75px;
+}
+
+.active-viewport,
+.active-device  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.active-device {
+    border: 2px solid #000000;
+
+    .label {
+        color: #ebebeb;
+        background-color: #000000;
+    }
+}
+
+.viewport-guide.viewport-desktop-minimum .active-viewport,
+.viewport-guide.viewport-desktop-small .active-viewport,
+.viewport-guide.viewport-desktop-reduced .active-viewport,
+.viewport-guide.viewport-desktop .active-viewport,
+.viewport-guide.viewport-desktop-hd .active-viewport,
+.viewport-guide.viewport-desktop-4k .active-viewport {
+    background-color: #ff000030;
+    border: 2px solid #aa0000;
+
+    .label {
+        color: #ebebeb;
+        background-color: #aa0000;
+    }
+}
+
+.viewport-guide.viewport-tablet-landscape .active-viewport,
+.viewport-guide.viewport-tablet-portrait .active-viewport,
+.viewport-guide.viewport-tablet-plus-landscape .active-viewport,
+.viewport-guide.viewport-tablet-plus-portrait .active-viewport {
+    background-color: #00ff0030;
+    border: 2px solid #048404;
+
+    .label {
+        color: #ebebeb;
+        background-color: #048404;
+    }
+}
+
+.viewport-guide.viewport-phone-landscape .active-viewport,
+.viewport-guide.viewport-phone-portrait .active-viewport,
+.viewport-guide.viewport-phone-plus-landscape .active-viewport,
+.viewport-guide.viewport-phone-plus-portrait .active-viewport {
+    background-color: #0000ff40;
+    border: 2px solid #0000ac;
+
+    .label {
+        color: #ebebeb;
+        background-color: #0000ac;
+    }
+}
